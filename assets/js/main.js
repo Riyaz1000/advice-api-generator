@@ -3,14 +3,14 @@ const blockQuoteEl = document.querySelector("blockquote > p");
 
 const buttonEl = document.getElementById("btn");
 
+buttonEl.style.display = "none";
+
 //https://api.adviceslip.com/advice
 
 const apiUrl = "https://api.adviceslip.com/advice";
 
-buttonEl.style.display = "none";
-
 buttonEl.addEventListener("click", () => {
-  window.location.href = "/";
+  window.location.href = "./index.html";
 });
 
 async function getAdviceData() {
