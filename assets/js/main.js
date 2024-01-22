@@ -7,6 +7,12 @@ const buttonEl = document.getElementById("btn");
 
 const apiUrl = "https://api.adviceslip.com/advice";
 
+buttonEl.style.display = "none";
+
+buttonEl.addEventListener("click", () => {
+  window.location.href = "/";
+});
+
 async function getAdviceData() {
   try {
     const response = await fetch(apiUrl);
@@ -22,3 +28,5 @@ const adviceData = await getAdviceData();
 console.log(adviceData);
 
 blockQuoteEl.textContent = adviceData.slip.advice;
+
+buttonEl.style.display = "block";
