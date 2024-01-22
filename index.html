@@ -7,15 +7,40 @@
 
     <!-- TailwindCSS -->
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
   </head>
-  <body class="bg-blue-300">
-    <h1 class="text-center text-5xl text-black p-6 font-semibold bg-red-300">
+
+  <body class="bg-gray-300">
+    <h1 class="text-center text-5xl text-gray-50 p-6 font-semibold bg-zinc-700">
       Quotes Generator
     </h1>
 
     <div
-      class="bg-white px-16 shadow-xl rounded-lg py-14 max-w-[470px] mx-auto mt-40 relative flex flex-col space-y-8"
-    ></div>
+      class="bg-white px-16 shadow-xl rounded-lg py-14 max-w-[470px] mx-auto sm:mt-40 relative flex flex-col space-y-8 min-[300px]:mt-4 max-[600px]:bg-sky-300"
+    >
+      <blockquote class="text-xl italic font-semibold text-gray-900">
+        <svg
+          class="w-8 h-8 text-gray-400 dark:text-gray-600 mb-4"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 18 14"
+        >
+          <path
+            d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"
+          />
+        </svg>
+        <p></p>
+      </blockquote>
+
+      <button
+        type="button"
+        id="btn"
+        class="bg-blue-600 hover:bg-blue-500 text-white rounded px-2 sm:w-40 sm:mx-24 font-poppins font-semibold py-2"
+      >
+        Give me another
+      </button>
+    </div>
 
     <script type="module" src="./assets/js/main.js"></script>
   </body>
